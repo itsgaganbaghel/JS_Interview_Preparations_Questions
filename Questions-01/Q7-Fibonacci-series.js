@@ -26,9 +26,9 @@
 function* fibonacciGenerator(GivenNumber) {
   let a = 0,
     b = 1;
-  while (a <= limit) {
-    yield a;
-    [a, b] = [b, a + b];
+  while (a <= GivenNumber) {
+    yield a;            // yield - stop the iteration here 
+    [a, b] = [b, a + b]; // by using array destructuring method 
   }
 }
 
